@@ -20,6 +20,25 @@ main {
     background: linear-gradient(311deg, rgba(34,173,195,1) 0%, rgba(253,212,45,1) 100%);
 }
 
+input {
+    opacity: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 2px #1c1c1c solid;
+    border-radius: 2rem;
+    padding: .6rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: transform 300ms ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
 h1{
     font-size: 2.5rem;
     margin-top: 1rem;

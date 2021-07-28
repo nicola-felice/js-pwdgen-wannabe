@@ -15,3 +15,18 @@ document.getElementById('salutoPersonalizzato').innerHTML += ` ${nameUser} ${Str
 
 // mostra password a schermo
 document.getElementById('generatedPassword').innerHTML = `La tua (insicurissima) password è: ${generatedPassword}`;
+
+
+
+// copy password to clipboard function
+function copyYourPassword() {
+    document.querySelector("#copyPassword").value = generatedPassword;
+    document.querySelector("#copyPassword").select();
+    document.execCommand("copy");
+
+    // change message when passw copied
+    document.querySelector("#copyPasswordButton").innerHTML = `Copied! ${String.fromCodePoint(0x1F44D)}`    
+}
+
+// copy password on click
+document.querySelector("#copyPasswordButton").addEventListener("click", copyYourPassword);
