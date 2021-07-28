@@ -13,7 +13,8 @@ main {
 
     color: #1c1c1c;
     font-family: 'Montserrat', sans-serif;
-    
+    text-align: center;
+
     height: 100vh;
     background: rgb(34,173,195);
     background: linear-gradient(311deg, rgba(34,173,195,1) 0%, rgba(253,212,45,1) 100%);
